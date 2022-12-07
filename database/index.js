@@ -1,9 +1,9 @@
 import Sequelize from 'sequelize';
 import config from './config/config.mjs';
-import HelperProfile from './models/helperprofile'
-import Request from './models/request'
-import Review from './models/review'
-import User from './models/user'
+import HelperProfile from './models/helperprofile.js';
+import Request from './models/request.js';
+import Review from './models/review.js';
+import User from './models/user.js'
 
 const db = {};
 db.HelperProfile = HelperProfile;
