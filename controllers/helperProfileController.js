@@ -13,6 +13,18 @@ const helperProfileController = {
         const helper = await db.HelperProfile.create(data)
         return JSON.parse(JSON.stringify(helper))
       }
-}
+    }
+
+/*const helperProfileController = {
+  all: async () => {
+    const helperProfiles = await db.HelperProfile.findAll()
+    const parsedHelperProfile = JSON.parse(JSON.stringify(helperProfiles))
+    return parsedHelperProfile
+  },
+  find: async (id) => {
+    return await db.HelperProfile.findByPk(id)
+  }
+}*/
+
 
 export default helperProfileController

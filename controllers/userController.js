@@ -1,6 +1,6 @@
 import db from '../database'
 
-const usersController = {
+const userController = {
     find: async (id) => {
         const user =await db.User.findByPk(id)
         return JSON.parse(JSON.stringify(user))
@@ -13,6 +13,7 @@ const usersController = {
         const user = await db.User.create(data)
         return JSON.parse(JSON.stringify(user))
       }
-}
 
-export default usersController
+    }
+
+export default userController
