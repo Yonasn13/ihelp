@@ -1,40 +1,43 @@
 import React from 'react'
-import helpersController from '../../controllers/helperController'
-import { useState, useEffect } from 'react'
+import helperController from '../../controllers/helperController'
+import Image from 'next/image'
 
-
-export default function Helper() {
-
-    const [data, setData] = useState(null)
-    const [helper, setHelper] = useState(false)
-
-    useEffect(() => {
-        setHelper(true)
-        fetch('/api/profile-data')
-            .then((res) => res.json())
-            .then((data) => {
-                setData(data)
-                setHelper(false)
-            })
-    }, [])
-    if (helper) return <p>Helper</p>
-    if (!data) return <p>No profile</p>
+export default function Helper(props) {
+    const helper = props.helper
 
     return (
-        <div>
-            <h1>{data.firstName}</h1>
-            <p>{data.lastName}</p>
-        </div>
-    )
 
+        <>
+            <div className='di' style={{ borderRadius: '40px', overflow: 'hidden' }}>
+                <Image src="/nike.png"
+                    alt="Nike"
+                    width={100}
+                    height={100}
+                    objectFit="cover"
+                />
+                <h3>{helper.firstName}</h3>
+            </div>
+            <form class="form">
+
+                <div>
+                    <h3>{helper.lastName}</h3>
+                    <p> {helper.language}</p>
+                    <p> {helper.city}</p>
+                    <p> {helper.phoneNumber}</p>
+
+
+
+                </div>
+            </form>
+        </>
+    )
 }
 
-
-
 export async function getServerSideProps(req, res) {
-    const helpers = await helpersController.findByPk()
+    const helperId = 1
+    const helper = await helperController.find(helperId)
     return {
-        props: { helpers },
+        props: { helper },
         // will be passed to the page component as props
     }
 }
