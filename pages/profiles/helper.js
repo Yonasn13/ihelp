@@ -22,8 +22,8 @@ export default function Helper() {
 
     return (
         <div>
-            <h1>{data.name}</h1>
-            <p>{data.bio}</p>
+            <h1>{data.firstName}</h1>
+            <p>{data.lastName}</p>
         </div>
     )
 

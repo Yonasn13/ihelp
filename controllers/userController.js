@@ -1,13 +1,13 @@
-import db from "../database"
+import db from '../database'
 
-const usersController = {
+const userController = {
     find: async (id) => {
         const user = await db.User.findByPk(id)
         return JSON.parse(JSON.stringify(user))
     },
     findAll: async () => {
-        const user = await db.User.findAll()
-        return JSON.parse(JSON.stringify(user))
+        const users = await db.User.findAll()
+        return JSON.parse(JSON.stringify(users))
     },
     create: async (data) => {
         const user = await db.User.create(data)
@@ -15,4 +15,4 @@ const usersController = {
     }
 }
 
-export default usersController;
+export default userController
