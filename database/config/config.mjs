@@ -3,12 +3,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const config = {
-  "development": {
-    "username": process.env.DB_USER,
-    "password": process.env.DB_PASSWORD,
-    "database": 'IHELP',
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+  development: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: "IHELP",
+    host: "127.0.0.1",
+    dialect: "postgres"
   },
   production: {
     username: process.env.DB_USER,
