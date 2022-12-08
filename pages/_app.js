@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from 'react'
 
-function MyApp({ Component, pageProps}) {
+function MyApp({ 
+  Component, 
+  pageProps: { session, ...pageProps} }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
@@ -11,5 +13,7 @@ function MyApp({ Component, pageProps}) {
     </>
   )
 }
+
+
 
 export default MyApp
