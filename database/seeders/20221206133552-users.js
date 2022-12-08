@@ -7,10 +7,8 @@ module.exports = {
        await queryInterface.bulkInsert('Users', [{
          firstName: 'Adela',
          lastName: 'Yari',
-         language: 'Persian',
-         city: 'Torino',
          email: 'AdelaYari1@gmail.com',
-         phoneNumber: '3476608100',
+         
          createdAt: new Date(),
          updatedAt: new Date ()
        }], {});

@@ -1,6 +1,5 @@
 import helperProfileController from "../../controllers/helperProfileController"
 import userController from '../../controllers/userController'
-import styles from '../../styles/Home.module.css'
 
 export default function helperProfile(props) {
     const helperProfiles = props.helperProfiles;
@@ -9,17 +8,23 @@ export default function helperProfile(props) {
     console.log(users)
     return (
         <>
-            <div className={styles.container}>
-                {helperProfiles.map(profile => {
-                    <h3 key={profile.id}>
-                        UserId: {profile.userId}, description: {profile.description}
-                    </h3>
-                })}
-                {users.map(user => {
+            <div>
+                <ol>
+                {helperProfiles.map(helperProfile => (
+                    <li helperProfile={helperProfile} key={helperProfile.id}>
+                        UserId: {helperProfile.UserId}, description: {helperProfile.description}
+                    </li>
+                ))}
+                </ol>
+                <div>
+                {users.map(user => (
                     <h3 key={user.id}>
                         firstName: {user.firstName}, lastName: {user.lastName}
                     </h3>
-                })}
+                    
+                ))}
+                </div>
+                <h1>Hello Vernon!</h1>
             </div>
         </>
 
@@ -27,7 +32,7 @@ export default function helperProfile(props) {
 }
 
 export async function getServerSideProps(req, res) {
-    const helperProfiles = await helperProfileController.findAll();
+    const helperProfiles = await helperProfileController.findAll()
     const users = await userController.findAll()
     return {
         props: { helperProfiles, users }

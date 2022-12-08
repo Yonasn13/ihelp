@@ -15,18 +15,11 @@ module.exports = {
       lastName: {
         type: Sequelize.STRING
       },
-      language: {
-        type: Sequelize.STRING
-      },
-      city: {
-        type: Sequelize.STRING
-      },
+      
       email: {
         type: Sequelize.STRING
       },
-      phoneNumber: {
-        type: Sequelize.STRING
-      },
+      
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
