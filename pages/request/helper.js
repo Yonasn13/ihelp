@@ -1,7 +1,6 @@
 
 import userController from "../../controllers/userController"
 
-
 export default function Request(props) {
   const request = props.request
    return (

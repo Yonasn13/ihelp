@@ -8,7 +8,6 @@ export default function helperProfile (props) {
     console.log(helperProfiles)
     return (
         <>
-         <navbar></navbar>
          <div className={styles.container}>
             <h3>List of helperProfile</h3>
         </div>

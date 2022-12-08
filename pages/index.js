@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import image from './image/ihelp-logo.png'
-import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -40,7 +39,6 @@ export default function Home() {
             </div>
             </div>
           </div>
-          <Navbar></Navbar>
         </div>
       </div>
     </>

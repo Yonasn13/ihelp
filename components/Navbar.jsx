@@ -14,7 +14,7 @@ export default function Navbar(props) {
                 </div>
                 <div className={styles.navlink}>
                     <Link href={'/about'}>
-                      ℹ️
+                        ℹ️
                     </Link>
                 </div>
                 <div className={styles.navlink}>
