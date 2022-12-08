@@ -3,7 +3,6 @@ import Link from "next/link";
 =======
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
-import image from './image/ihelp-logo.png'
 import Navbar from '../components/Navbar';
 >>>>>>> 76b0de5e927c9ef827f2197ebc30385b4ce98d53
 
@@ -17,7 +16,7 @@ export default function Home() {
       <div className=''>
         <div className={styles.halfPageGreen}>
           <div>
-            <Image src={image} alt="ihelp logo" width={200} height={150} />
+            <Image src={'/ihelp-logo.png'} alt="ihelp logo" width={200} height={150} />
           </div>
         </div>
         <div className={styles.halfPageWhite}>
