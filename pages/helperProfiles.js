@@ -1,7 +1,4 @@
 import helperProfileController from "../controllers/helperProfileController"
-//import Card from '../components/card'
-import styles from '../styles/Home.module.css'
-//import Navbar from "../components/navbar"
 
 export default function helperProfile (props) {
     const helperProfiles = props.helperProfiles
@@ -9,9 +6,14 @@ export default function helperProfile (props) {
     return (
         <>
          <navbar></navbar>
-         <div className={styles.container}>
-            <h3>List of helperProfile</h3>
+         <div >
+            <h1>List of Helpers</h1>
         </div>
+        <div>
+        {helperProfiles.map(helperProfile => (
+         <h3 key={helperProfile.id}>UserId: {helperProfile.UserId}; Active: {helperProfile.active}; Description: {helperProfile.description}</h3>
+     ))}
+   </div> 
         </>
         
     )

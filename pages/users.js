@@ -1,22 +1,19 @@
-
-//import Card from "../components/card"
 import userController from "../controllers/userController"
-import styles from "../styles/Home.module.css"
-//import Navbar from "../components/navbar"
 
 export default function user (props) {
     const users = props.users
     console.log(users)
     return (
         <>
-        
-         <div className={styles.container}>
-            <h3>List of users</h3>
+         <div>
+            <h1>List of Users</h1>
         </div>
-        </>
-        
-        
-        
+        <div>
+        {users.map(user => (
+         <h3 key={user.id} >First name: {user.firstName}; Last name: {user.lastName}; Language: {user.language}; City: {user.city}</h3>
+     ))}
+   </div>  
+        </>    
     )
 }
 
