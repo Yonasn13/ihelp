@@ -1,8 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/globals.css';
 import { useEffect } from 'react'
-import { SessionProvider } from "next-auth/react"
-import Navbar from "../components/Navbar";
 
 function MyApp({ 
   Component, 
@@ -12,9 +9,7 @@ function MyApp({
   }, []);
   return (
     <>
-    <SessionProvider session={session}>
       <Component {...pageProps} />
-    </SessionProvider>
     <Navbar></Navbar>
     </>
   )
