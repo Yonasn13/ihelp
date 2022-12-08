@@ -1,6 +1,6 @@
 
 //import Card from "../components/card"
-import userController from "../controllers/userController"
+import userController from "../../controllers/userController"
 import styles from "../styles/Home.module.css"
 //import Navbar from "../components/navbar"
 
