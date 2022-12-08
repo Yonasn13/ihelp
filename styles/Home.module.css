@@ -2,6 +2,32 @@
   padding: 0 2rem;
 }
 
+.container2 {
+  padding: 16px;
+  margin-top: 140px;
+}
+
+.helperButton {
+  padding: 2px;
+}
+
+.helpButton {
+  padding: 2px;
+}
+
+.halfPageGreen {
+  background-color: #97ffa2;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.halfPageWhite {
+  background-color: white;
+  height: 50vh;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -19,9 +45,10 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+
 }
 
-.footer a {
+.footlink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +134,22 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+
+.h1Welcome {
+  display: flex;
+  justify-content: center;
+}
+
+.paragdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.paragp {
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 @media (max-width: 600px) {
   .grid {
