@@ -1,11 +1,13 @@
 .navbar {
-    background-color: #174756;
+    background-color: #d6efab;
     height: 7vh;
     width: 100%;
     color: rgb(8, 65, 68);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 570px;
+   
   }
   
   .navlink a {

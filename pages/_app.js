@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { useEffect } from 'react'
 import { SessionProvider } from "next-auth/react"
 
+
 function MyApp({ 
   Component, 
   pageProps: { session, ...pageProps} }) {
@@ -14,8 +15,11 @@ function MyApp({
     <SessionProvider session={session}>
       <Component {...pageProps} />
     </SessionProvider>
+
     </>
   )
 }
+
+
 
 export default MyApp
