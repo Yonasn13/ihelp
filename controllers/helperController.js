@@ -1,18 +1,19 @@
 import db from "../database"
 
-const usersController = {
+const helperController = {
     find: async (id) => {
-        const user = await db.User.findByPk(id)
-        return JSON.parse(JSON.stringify(user))
+        const helper = await db.Helper.findByPk(id)
+        return JSON.parse(JSON.stringify(helper))
     },
     findAll: async () => {
-        const user = await db.User.findAll()
-        return JSON.parse(JSON.stringify(user))
+        const helper = await db.Helper.findAll()
+        return JSON.parse(JSON.stringify(helper))
     },
     create: async (data) => {
-        const user = await db.User.create(data)
-        return JSON.parse(JSON.stringify(user))
+        const helper = await db.Helper.create(data)
+        return JSON.parse(JSON.stringify(helper))
     }
 }
 
-export default usersController;
+export default helperController;
+

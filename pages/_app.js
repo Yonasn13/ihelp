@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from 'react'
 
+<<<<<<< HEAD
 function MyApp({ 
   Component, 
   pageProps: { session, ...pageProps} }) {
@@ -12,6 +13,11 @@ function MyApp({
       <Component {...pageProps} />
     </>
   )
+=======
+function MyApp({ Component, pageProps }) {
+  return
+  <Component {...pageProps} />
+>>>>>>> user-profile
 }
 
 
