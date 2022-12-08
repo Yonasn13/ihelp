@@ -12,10 +12,8 @@ const initUser = (sequelize, DataTypes) => {
   User.init({
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
-    language: DataTypes.STRING,
-    city: DataTypes.STRING,
     email: DataTypes.STRING,
-    phoneNumber: DataTypes.STRING
+    
   }, {
     sequelize,
     modelName: 'User',

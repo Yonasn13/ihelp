@@ -13,7 +13,10 @@ const initHelperProfile = (sequelize, DataTypes) => {
     UserId: DataTypes.INTEGER,
     description: DataTypes.STRING,
     image: DataTypes.STRING,
-    active: DataTypes.BOOLEAN
+    active: DataTypes.BOOLEAN,
+    phoneNumber: DataTypes.STRING,
+    language: DataTypes.STRING,
+    city: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'HelperProfile',
