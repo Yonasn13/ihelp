@@ -10,7 +10,29 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-
+  }
+  
+  .navlink a {
+    text-decoration: none;
+    color: rgb(224, 213, 213);
+  }
+  
+  .navlink a:hover {
+    color: rgb(214, 200, 200);
+    background-color: rgb(213, 231, 232);
+  }
+  
+  .avatar {
+    height: 3.5vh;
+    width: 3.5vh;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+ .pass{
+   left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
 }
 
 .navlink a {
