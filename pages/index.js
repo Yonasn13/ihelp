@@ -2,13 +2,14 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 export default function Home() {
   return (
     <>
       <div className=''>
         <div className={styles.halfPageGreen}>
           <div>
-            <Image src={'/ihelp-logo.png'} alt="ihelp logo" width={200} height={150} />
+            <Image src={'/ihelp-logo.png'} alt="/ihelp logo" width={200} height={150} />
           </div>
         </div>
         <div className={styles.halfPageWhite}>

@@ -3,7 +3,7 @@ import styles from "../styles/Navbar.module.css";
 
 export default function Navbar(props) {
     // fix the routes so that they send to the correct path
-    const session = props.session
+    const navbar = props.navbar
     return (
         <>
             <nav className={styles.navbar}>
@@ -14,7 +14,7 @@ export default function Navbar(props) {
                 </div>
                 <div className={styles.navlink}>
                     <Link href={'/about'}>
-                      ℹ️
+                        ℹ️
                     </Link>
                 </div>
                 <div className={styles.navlink}>
