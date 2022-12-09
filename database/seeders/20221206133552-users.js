@@ -8,7 +8,6 @@ module.exports = {
          firstName: 'Adela',
          lastName: 'Yari',
          email: 'AdelaYari1@gmail.com',
-         
          createdAt: new Date(),
          updatedAt: new Date ()
        }], {});

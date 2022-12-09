@@ -10,7 +10,6 @@ function MyApp({
   return (
     <>
       <Component {...pageProps} />
-    <Navbar></Navbar>
     </>
   )
 }

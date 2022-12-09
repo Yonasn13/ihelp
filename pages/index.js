@@ -1,6 +1,5 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
-import image from './image/ihelp-logo.png'
 
 export default function Home() {
   return (
@@ -8,7 +7,7 @@ export default function Home() {
       <div className=''>
         <div className={styles.halfPageGreen}>
           <div>
-            <Image src={image} alt="ihelp logo" width={200} height={150} />
+            <Image src={'/ihelp-logo.png'} alt="/ihelp logo" width={200} height={150} />
           </div>
         </div>
         <div className={styles.halfPageWhite}>

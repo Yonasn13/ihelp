@@ -5,6 +5,10 @@ const helperProfileController = {
     const helper = await db.HelperProfile.findByPk(id)
     return JSON.parse(JSON.stringify(helper))
   },
+  findUser: async (userId) => {
+    const helper = await db.HelperProfile.findOne({ where: { UserId: userId}, include: db.User})
+    return JSON.parse(JSON.stringify(helper))
+  },
   findAll: async () => {
     const helper = await db.HelperProfile.findAll()
     return JSON.parse(JSON.stringify(helper))
