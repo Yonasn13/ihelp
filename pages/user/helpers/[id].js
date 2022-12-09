@@ -19,7 +19,7 @@ export default function helperProfile(props) {
             </div>
 
             <div>
-                <form action={`/api/request/${helperProfile.id}/request`} method="POST">
+                <form action={`/api/user/request`} method="POST">
                     <label for="message">Request message:</label>
                     <input type="text" id="message" name="message" />
                     <input type="submit" value="Submit" />
