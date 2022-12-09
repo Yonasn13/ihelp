@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 function MyApp({ 
   Component, 
-  pageProps: { session, ...pageProps} }) {
+  pageProps }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
