@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -23,20 +23,22 @@ export default function Home() {
           </div>
           <div className={styles.container2}>
             <div className={styles.helperButton}>
-            <div className='row'>
-              <div className='btn btn-primary'>
-                Helper
-              </div>
-            </div>
+              <Link href={'/helper/requests'}>
+                <div className='row'>
+                  <div className='btn btn-primary'>
+                    Helper
+                  </div>
+                </div>
+              </Link>
             </div>
             <div className={styles.helpButtn}>
-            <div className=''>
-              <div className='row'>
-                <div className='btn btn-outline-success'>
-                  Help
+              <div className=''>
+                <div className='row'>
+                  <div className='btn btn-outline-success'>
+                    Help
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
