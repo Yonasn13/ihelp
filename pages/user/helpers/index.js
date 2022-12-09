@@ -12,8 +12,9 @@ export default function helperProfile(props) {
              <ul>
                 {helperProfiles.map(helperProfile => (
                    <li key={helperProfile.id}>
-                        City: {helperProfile.city}, Language: {helperProfile.language}
-                        <Link href={`/user/helpers/[id]${helperProfile.id}`}>  {helperProfile.UserId}</Link>
+                        City: {helperProfile.city}, Language: {helperProfile.language} 
+                        <Link href={`/user/helpers/${helperProfile.id}`}> 
+                         {<p> Name: {helperProfile.User.lastName} {helperProfile.User.firstName}</p>}</Link>
                         </li>
                 ))}
                  </ul>
