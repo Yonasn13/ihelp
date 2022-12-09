@@ -1,5 +1,6 @@
 import styles from '../../../styles/Home.module.css'
 import helperProfileController from '../../../controllers/helperProfileController'
+import Navbar from '../../../components/Navbar'
 
 const Requests = props => {
     const helper = props.helper
@@ -11,25 +12,27 @@ const Requests = props => {
     return (
         <>
             <div className={styles.container}>
+                <Navbar></Navbar>
                 <div>
                     <h3>Message from:</h3>
                 </div>
-                <ul>
-                    {requests.map(request => (<p request={request} key={request.id}>{userFirstName.firstName}<br/> {request.message}</p>))}
-                </ul>
-
+                <div>
+                    <h4>{userFirstName.firstName}</h4>
+                    <p>{requests[0].message}</p>
+                </div>
             </div>
         </>
     )
 }
 
-export async function getServerSideProps (req, res) {
+export async function getServerSideProps(req, res) {
     const userId = 1
     const helper = await helperProfileController.findByUser(userId)
     const user = await helperProfileController.findUser(userId)
     console.log(user)
+    console.log(helper)
     return (
-        {props: { helper, user }}
+        { props: { helper, user } }
     )
 }
 
