@@ -23,7 +23,7 @@ export default function Navbar(props) {
                     </Link>
                 </div>
                 <div className={styles.navlink}>
-                    <Link href={'/profile/user'}>
+                    <Link href={'/helper/profile'}>
                         👩🏻
                     </Link>
                 </div>

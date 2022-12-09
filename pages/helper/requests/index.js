@@ -1,6 +1,7 @@
 import styles from '../../../styles/Home.module.css'
 import helperProfileController from '../../../controllers/helperProfileController'
 import Link from 'next/link'
+import Navbar from '../../../components/Navbar'
 
 const Requests = props => {
     const helper = props.helper
@@ -12,6 +13,7 @@ const Requests = props => {
     return (
         <>
             <div className={styles.container}>
+                <Navbar></Navbar>
                 <div>
                     <h3>list of Requests</h3>
                 </div>
