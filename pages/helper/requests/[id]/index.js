@@ -1,6 +1,7 @@
-import styles from '../../../styles/Home.module.css'
-import helperProfileController from '../../../controllers/helperProfileController'
-import Navbar from '../../../components/Navbar'
+import styles from '../../../../styles/Home.module.css'
+import helperProfileController from '../../../../controllers/helperProfileController'
+import Navbar from '../../../../components/Navbar'
+import Link from 'next/link'
 
 const Requests = props => {
     const helper = props.helper
@@ -15,10 +16,20 @@ const Requests = props => {
                 <Navbar></Navbar>
                 <div>
                     <h3>Message from:</h3>
-                </div>
-                <div>
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
+                </div>
+                <div className={styles.container2}>
+                    <div className='row'>
+                        <div className='btn btn-success'>
+                            <Link href={`/helper/requests/${userFirstName.id}/message`} className={styles.LinkBtnButtons}>
+                                Accept
+                            </Link>
+                        </div>
+                        <div className='btn btn-danger'>
+                            <Link href={'/helper/requests'} className={styles.LinkBtnButtons}>Decline</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
