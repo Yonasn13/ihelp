@@ -11,7 +11,7 @@ export default function Aboutinfo() {
             </div>
             <div className={styles.near}>
                 <div className={styles.h}>
-                    <h2><b>The Process</b></h2>
+                        <h2><b>The Process</b></h2>
                 </div>
                 <div className={styles.abouts}>
                     <p> <b>Connection To Your Helpers</b></p>

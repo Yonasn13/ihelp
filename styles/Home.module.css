@@ -45,7 +45,6 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-
 }
 
 .footlink {
@@ -91,7 +90,7 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
- 
+
 .grid {
   display: flex;
   align-items: center;
@@ -150,69 +149,63 @@
   justify-content: flex-end;
 }
 
-.callMe{
-     background-color:rgb(218, 194, 194);
-      height: 100vh;
+.callMe {
+  background-color: rgb(216, 185, 190);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .form {
-    left      : 30%;
-    top       : 30%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
+  left: 30%;
+  top: 30%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
-.bell{
-    left      : 80%;
-    top       : 15%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
-    
+.bell {
+  left: 80%;
+  top: 15%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
-.abouts{
-    left      : 50%;
-    top       : 52%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
-    color: white;
+.abouts {
+  left: 50%;
+  top: 52%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
 }
-.h{
-   left      : 52%;
-    top       : 10%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
-    color: green;
+.h {
+  left: 52%;
+  top: 10%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: green;
 }
-.near{
-     background-color:black;
-      height: 115vh;
+.near {
+  background-color: black;
+  height: 115vh;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 22px;
-  
 }
 
-.clicks{
-   left      : 52%;
-    top       : 112%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
-    color: whitesmoke;
-    
-    
+.clicks {
+  left: 52%;
+  top: 112%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
 }
 
-.foot{
-    left      : 51%;
-    top       : 110%;
-    position  : absolute;
-    transform : translate(-50%, -50%);
-    color: whitesmoke;
-
+.foot {
+  left: 51%;
+  top: 110%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
 }
 
 @media (max-width: 600px) {

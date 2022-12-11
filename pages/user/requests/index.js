@@ -18,13 +18,19 @@ export default function Request(props) {
                         <h3>List of Requests</h3>
 
                         {requests.map(request => (
-                            <div > <p key={request.id} >
-                                <FaHandPaper />
+                            <div  key={request.id} >
+                              
+                                <div class="shadow p-3 mb-5 bg-body rounded">
+                                   <FaHandPaper />
                                 <Link href='/requests/1' >{request.message} </Link>
-                                {request.HelperProfile.User.firstName}  {request.HelperProfile.User.lastName}
-                            </p>
+                                {request.HelperProfile.User.firstName}  {request.HelperProfile.User.lastName}   
+
+                           </div>
+
+                            
                             </div>
                         ))}
+                        
 
                     </div>
                 </div>

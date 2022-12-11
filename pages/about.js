@@ -14,7 +14,7 @@ export default function About() {
                     <h3><b>Immigrants Help Arena</b></h3>
                 </div>
                 <div className={styles.abouts}>
-
+                    
                     <p><b>Resquest for help</b></p>
 
                     <p>
@@ -42,7 +42,7 @@ export default function About() {
 
 
                 </div>
-                <footer className={styles.foot}> &copy; {new Date().getFullYear()}  i-help</footer>
+                <footer className={styles.foot} style={{borderTop: '1px solid white', padding: '20px 20px'}}> &copy; {new Date().getFullYear()}  i-help</footer>
             </div>
         </>
     )

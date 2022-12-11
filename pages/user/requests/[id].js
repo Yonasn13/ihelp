@@ -2,7 +2,6 @@ import requestController from '../../../controllers/requestController'
 import React from 'react'
 import styles from '../../../styles/Home.module.css'
 import { FaBell, FaEnvelope, FaWhatsapp, FaCheckCircle } from 'react-icons/fa'
-import Footer from '../../../components/footer'
 
 
 export default function Request(props) {
@@ -31,17 +30,30 @@ export default function Request(props) {
 
                     <h6>Status  <FaCheckCircle color={'grey'} /></h6>
 
-                    <p>
-                        <FaEnvelope /> {request.HelperProfile.User.email} <br />
-                        <FaWhatsapp color='green' />
-                        {request.HelperProfile.phoneNumber}
-                    </p>
+                     <div class="shadow p-3 mb-5 bg-body rounded">
+                    <div class="hstack gap-6">
+                        
+                        <div class="bg-light border">
+                               
+                            <FaEnvelope /> {request.HelperProfile.User.email} 
+                       
+                        </div>
+                      
+                    </div>
+
+                        
+                    <div class="vstack gap-3">
+                        <div class="bg-light border">
+                            <FaWhatsapp color='green' />  {request.HelperProfile.phoneNumber}
+                        </div>
+                    </div>
+                        
+                    </div>
 
 
                 </div>
             </div>
             <div>
-                <Footer>&copy; {new Date().getFullYear()} Absida</Footer>
 
             </div>
         </>
