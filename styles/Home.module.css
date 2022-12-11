@@ -198,12 +198,21 @@
 
 .clicks{
    left      : 52%;
-    top       : 115%;
+    top       : 112%;
     position  : absolute;
     transform : translate(-50%, -50%);
     color: whitesmoke;
     
     
+}
+
+.foot{
+    left      : 51%;
+    top       : 110%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+    color: whitesmoke;
+
 }
 
 @media (max-width: 600px) {

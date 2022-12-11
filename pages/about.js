@@ -42,6 +42,7 @@ export default function About() {
 
 
                 </div>
+                <footer className={styles.foot}> &copy; {new Date().getFullYear()}  i-help</footer>
             </div>
         </>
     )
