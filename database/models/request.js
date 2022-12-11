@@ -13,7 +13,8 @@ const initRequest = (sequelize, DataTypes) => {
   Request.init({
     HelperProfileId: DataTypes.INTEGER,
     UserId: DataTypes.INTEGER,
-    message: DataTypes.STRING
+    message: DataTypes.STRING,
+    status: DataTypes.BOOLEAN,
   }, {
     sequelize,
     modelName: 'Request',

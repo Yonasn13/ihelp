@@ -34,11 +34,13 @@ export default function Home() {
             </div>
             <div className={styles.helpButtn}>
               <div className=''>
-                <div className={styles.row}>
-                  <div className='btn btn-outline-success'>
-                    Help
+                <Link href={'/user/helpers'}>
+                  <div className={styles.row}>
+                    <div className='btn btn-outline-success'>
+                      Help
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

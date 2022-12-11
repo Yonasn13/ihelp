@@ -2,7 +2,7 @@ import db from '../database'
 
 const requestController = {
   find: async (id) => {
-    const request = await db.Request.findByPk(id)
+    const request = await db.Request.findByPk(id, {include: db.HelperProfile})
     return JSON.parse(JSON.stringify(request))
   },
   findAll: async () => {

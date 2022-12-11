@@ -1,20 +1,30 @@
-import userController from "../../controllers/userController"
-
+/*import Link from 'next/link'
+import { FaBell, FaHandPaper } from 'react-icons/fa'
+import requestController from '../../../controllers/requestController'
 
 export default function Request(props) {
-const request = props.request
-console.log(request)
+  const requests = props.requests
+  console.log(requests)
   return (
     <>
-      <h1>About</h1>
+      <div >
+        <h3>List of Requests</h3>
+        <FaBell />
+        {requests.map(request => (
+          <p key={request.id} >
+            <Link href='/id' ><FaHandPaper /></Link>
+            {request.message} <br />
+            {request.HelperProfile.User.firstName}  {request.HelperProfile.User.lastName}
+          </p>
+        ))}
+      </div>
     </>
   )
 }
-
 export async function getServerSideProps(req, res) {
-  const id = req.query.id
-  const helpers = await userController.find(id)
+  const requests = await requestController.findAll()
   return {
-      props: { helpers},
+    props: { requests },
+    // will be passed to the page component as props
   }
-}
+}*/
