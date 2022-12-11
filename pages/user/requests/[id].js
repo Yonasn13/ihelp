@@ -1,23 +1,58 @@
+import requestController from '../../../controllers/requestController'
 import React from 'react'
-import userController from '../../../controllers/userController'
-import { FaRegEnvelope, FaBell, FaWhatsapp } from 'react-icons/fa';
+import styles from '../../../styles/Home.module.css'
+import { FaBell, FaEnvelope, FaWhatsapp, FaCheckCircle } from 'react-icons/fa'
+import Footer from '../../../components/footer'
 
-export default function User(props) {
-    const user = props.user
+
+export default function Request(props) {
+    const request = props.request
+    console.log(request)
+
+
+    function readMessage() {
+        let status = 'seen'
+        if (status == 'seen') {
+            return (<FaCheckCircle color={'green'} />)
+        } else {
+            return (<FaCheckCircle color={'grey'} />)
+        }
+    }
+    console.log(readMessage())
     return (
-        <div>
-            <FaBell />
+        < >
 
-            <h3>Request Details</h3>
-            <p><FaRegEnvelope />{user.email}</p>
-            <p> < FaWhatsapp />{user.phoneNumber}</p>
-        </div>
+            <div className={styles.callMe}>
+
+                <FaBell className={styles.bell} />
+                <div className={styles.form}>
+
+                    <h3>Request Details</h3>
+
+                    <h6>Status  <FaCheckCircle color={'grey'} /></h6>
+
+                    <p>
+                        <FaEnvelope /> {request.HelperProfile.User.email} <br />
+                        <FaWhatsapp color='green' />
+                        {request.HelperProfile.phoneNumber}
+                    </p>
+
+
+                </div>
+            </div>
+            <div>
+                <Footer>&copy; {new Date().getFullYear()} Absida</Footer>
+
+            </div>
+        </>
+
     )
 }
 
 export async function getServerSideProps(req, res) {
-    const users = await userController.findAll()
+    const { id } = req.query
+    const request = await requestController.find(id)
     return {
-        props: { users },
+        props: { request },
     }
 }

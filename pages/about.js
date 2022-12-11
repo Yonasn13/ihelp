@@ -1,39 +1,48 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 export default function About() {
     return (
-
-        <div>
-            <Head>
-                <title>about</title>
+        <>
+            <div>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
                 </link>
-            </Head>
+            </div>
+            <div className={styles.near}>
+                <div className={styles.h}>
+                    <h3><b>Immigrants Help Arena</b></h3>
+                </div>
+                <div className={styles.abouts}>
 
-            <h3>Immigrants Help Stop</h3>
-            <h6>Resquest for help</h6>
-            <p>
-                Are you having difficult time
-                finding someone to help you
-                getting your documents?
-                then your worries are over,
-                here you can have the aid you ever need.
-            </p>
-            <h6>Help others out</h6>
-            <p>
-                Are you an expert in helping others to have their permite of stay?
-                Do you know someone who can give a helping hand, or do you like
-                helping others that are struggling get their documents ?
-                Well, good news, this App is for you, connect and reach out everyone everywhere.
-            </p>
-            <p><b>How it works?</b></p>
-            <Link href='/pages/about'>
-                <button type="button" className="btn btn-success">Success</button>
-            </Link>
+                    <p><b>Resquest for help</b></p>
+
+                    <p>
+                        Are you having difficulties
+                        finding someone to help you
+                        getting your documents?<br />
+                        Then your worries are over,
+                        here you can have the aid you ever need.
+                    </p>
+                    <p><b>Help others out</b></p>
+                    <p>
+                        Are you an expert in helping others to have their permite of stay? <br />
+                        Do you know someone who can give a helping hand, <br /> or do you like
+                        helping others that are struggling get their documents ?<br />
+                        Well, the good news is, this App is for you, connect and reach out everyone everywhere.
+                    </p>
+                    <div className={styles.clicks}>
+                        <div >
+                            <p ><b >How it works?</b></p>
+                        </div>
+                        <Link href='/pages/index'>
+                            <button type="button" className="btn btn-success"><b>CONTINUE</b></button>
+                        </Link>
+                    </div>
 
 
-        </div>
+                </div>
+            </div>
+        </>
     )
 }
