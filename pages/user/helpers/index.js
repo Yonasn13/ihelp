@@ -1,28 +1,20 @@
-import requestController from '../../../controllers/requestController'
+import userController from "../../controllers/userController"
 
 
 export default function Request(props) {
-    const requests = props.requests
-    return (
-        <>
-            <din >
-                <h3>List of Requests</h3>
-
-                {requests.map(request => (
-                    <p key={request.id} >HelperProfile: {request.helperProfileId}<br />
-                        Message: {request.message}</p>
-                ))}
-            </din>
-
-            )
-        </>
-    )
+const request = props.request
+console.log(request)
+  return (
+    <>
+      <h1>About</h1>
+    </>
+  )
 }
 
 export async function getServerSideProps(req, res) {
-    const requests = await requestController.findAll()
-    return {
-        props: { requests },
-        // will be passed to the page component as props
-    }
+  const id = req.query.id
+  const helpers = await userController.find(id)
+  return {
+      props: { helpers},
+  }
 }

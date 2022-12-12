@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -7,7 +9,7 @@ export default function Home() {
       <div className=''>
         <div className={styles.halfPageGreen}>
           <div>
-            <Image src={'/ihelp-logo.png'} alt="ihelp logo" width={200} height={150} />
+            <Image src={'/ihelp-logo.png'} alt="/ihelp logo" width={200} height={150} />
           </div>
         </div>
         <div className={styles.halfPageWhite}>
@@ -22,11 +24,13 @@ export default function Home() {
           </div>
           <div className={styles.container2}>
             <div className={styles.helperButton}>
-              <div className='row'>
-                <div className='btn btn-primary'>
-                  Helper
+              <Link href={'/helper/requests'}>
+                <div className='row'>
+                  <div className='btn btn-primary'>
+                    Helper
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.helpButtn}>
               <div className=''>
