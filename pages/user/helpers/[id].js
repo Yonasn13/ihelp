@@ -28,7 +28,7 @@ export default function helperProfile(props) {
                 <p> Language: {helperProfile.language}</p>
                 <p> Description: {helperProfile.description}</p>
                 <div>
-                    <form action={`/user/requests`} method="POST">
+                    <form action={'/user/requests'} method="POST">
                         <label for="message">Request message:</label> 
                         <br/>
                         <input type="text" id="message" name="message" />
