@@ -1,7 +1,9 @@
 import requestController from "../../../controllers/requestController";
-import React from "react";
 import styles from "../../../styles/Home.module.css";
 import { FaBell, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import React from "react";
+import ReactStars from "react-stars";
+import Navbar from "../../../components/Navbar";
 
 export default function Request(props) {
   const request = props.request;
@@ -29,9 +31,10 @@ export default function Request(props) {
               </div>
             </div>
           </div>
+          <ReactStars count={5} size={24} color2={"#ffd700"} />
         </div>
       </div>
-      <div></div>
+      <Navbar />
     </>
   );
 }
