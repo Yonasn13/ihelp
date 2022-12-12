@@ -10,7 +10,15 @@ module.exports = {
          email: 'AdelaYari1@gmail.com',
          createdAt: new Date(),
          updatedAt: new Date ()
-       }], {});
+       },
+       {
+        firstName: 'Yusuf',
+        lastName: 'Nur',
+        email: 'yusufNur13@gmail.com',
+        createdAt: new Date(),
+        updatedAt: new Date()
+       }
+    ], {});
      
   },
 

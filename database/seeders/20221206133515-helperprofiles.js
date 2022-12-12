@@ -14,7 +14,18 @@ module.exports = {
       phoneNumber: '3476608100',
       createdAt: new Date(),
       updatedAt: new Date()
-    }], {});
+    },
+     {UserId: 2,
+     description: "I have helped around 10 people in the last 1 year",
+     image: 'I am image 2',
+     active: true,
+     language: 'English',
+     city: 'Rome',
+     phoneNumber: '3406608100',
+     createdAt: new Date(),
+     updatedAt: new Date()
+    }
+  ], {});
 
   },
 
