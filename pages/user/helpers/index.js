@@ -11,11 +11,9 @@ export default function helperProfile(props) {
     <>
       <div className={styles.search}>
         <form action="" class="search-bar">
-          <input type="search" name="search" pattern=".*\S.*" required />
-          <button class="search-button" type="submit">
-            <Link href={'/'}>
-              <span>Search</span>
-            </Link>
+          <input type="search" name="search" placeholder="search..." pattern=".*\S.*" required />
+          <button class="search-button" type="submit" >
+            <span>🔍</span>
           </button>
         </form>
       </div>
