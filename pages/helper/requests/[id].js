@@ -1,6 +1,7 @@
 import styles from '../../../styles/Home.module.css'
 import helperProfileController from '../../../controllers/helperProfileController'
 import Navbar from '../../../components/Navbar'
+import Link from 'next/link'
 
 const Requests = props => {
     const helper = props.helper
@@ -11,15 +12,25 @@ const Requests = props => {
     console.log("userFirstName ", userFirstName)
     return (
         <>
-            <div className={styles.container}>
+            <div className={styles.container2}>
                 <Navbar></Navbar>
                 <div>
-                    <h3>Message from:</h3>
+                    <h3>Message from</h3>
                 </div>
+                <br/>
                 <div>
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
                 </div>
+            </div>
+            <div className={styles.btn}>
+                <Link href={'/helper/requests/new'}>
+                    <div className='btn btn-success'>accept</div>
+                </Link>
+                <br />
+                <Link href="/">
+                    <div className='btn btn-danger'>decline</div>
+                </Link>
             </div>
         </>
     )

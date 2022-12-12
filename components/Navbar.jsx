@@ -9,17 +9,12 @@ export default function Navbar(props) {
             <nav className={styles.navbar}>
                 <div className={styles.navlink}>
                     <Link href={'/'}>
-                        🏛️
+                    🏛️
                     </Link>
                 </div>
                 <div className={styles.navlink}>
                     <Link href={'/about'}>
                         ℹ️
-                    </Link>
-                </div>
-                <div className={styles.navlink}>
-                    <Link href={'/search'}>
-                        🔍
                     </Link>
                 </div>
                 <div className={styles.navlink}>

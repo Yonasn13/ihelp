@@ -2,7 +2,7 @@ import db from '../database'
 
 const helperProfileController = {
   find: async (id) => {
-    const helper = await db.HelperProfile.findByPk(id)
+    const helper = await db.HelperProfile.findByPk(id, {include: db.User})
     return JSON.parse(JSON.stringify(helper))
   },
   findByUser: async (userId) => {
@@ -14,7 +14,7 @@ const helperProfileController = {
     return JSON.parse(JSON.stringify(helper))
   },
   findAll: async () => {
-    const helper = await db.HelperProfile.findAll()
+    const helper = await db.HelperProfile.findAll({include: db.User})
     return JSON.parse(JSON.stringify(helper))
   },
   create: async (data) => {
