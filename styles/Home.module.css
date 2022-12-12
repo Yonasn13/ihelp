@@ -208,6 +208,24 @@
   color: whitesmoke;
 }
 
+.invisible {
+  visibility: hidden !important;
+}
+
+.name {
+  left: 50%;
+  top: 25%;
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
+
+.name2 {
+  left: 50%;
+  top: 67%;
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

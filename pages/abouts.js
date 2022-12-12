@@ -35,7 +35,7 @@ export default function Aboutinfo() {
 
                     <div className={styles.clicks}>
 
-                        <Link href='/pages/index'>
+                        <Link href='/'>
                             <button type="button" className="btn btn-success"><b>HOME</b></button>
                         </Link>
 
@@ -43,7 +43,8 @@ export default function Aboutinfo() {
                 </div>
             </div>
             <div>
-                <footer className={styles.foot}> &copy; {new Date().getFullYear()}  i-help</footer>
+
+                <footer className={styles.foot} style={{ borderTop: '1px solid white', padding: '20px 20px' }}> &copy; {new Date().getFullYear()}  i-help</footer>
             </div>
         </>
     )

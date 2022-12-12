@@ -15,7 +15,7 @@ export default function About() {
                 </div>
                 <div className={styles.abouts}>
                     
-                    <p><b>Resquest for help</b></p>
+                      <p><b>Resquest for help</b></p>
 
                     <p>
                         Are you having difficulties
@@ -35,7 +35,7 @@ export default function About() {
                         <div >
                             <p ><b >How it works?</b></p>
                         </div>
-                        <Link href='/pages/index'>
+                        <Link href='/abouts'>
                             <button type="button" className="btn btn-success"><b>CONTINUE</b></button>
                         </Link>
                     </div>

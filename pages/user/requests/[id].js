@@ -9,26 +9,17 @@ export default function Request(props) {
     console.log(request)
 
 
-    function readMessage() {
-        let status = 'seen'
-        if (status == 'seen') {
-            return (<FaCheckCircle color={'green'} />)
-        } else {
-            return (<FaCheckCircle color={'grey'} />)
-        }
-    }
-    console.log(readMessage())
+   
     return (
         < >
-
-            <div className={styles.callMe}>
+<div className={styles.callMe}>
 
                 <FaBell className={styles.bell} />
                 <div className={styles.form}>
 
                     <h3>Request Details</h3>
 
-                    <h6>Status  <FaCheckCircle color={'grey'} /></h6>
+                    <h6>Status  </h6>
 
                      <div class="shadow p-3 mb-5 bg-body rounded">
                     <div class="hstack gap-6">
@@ -56,6 +47,7 @@ export default function Request(props) {
             <div>
 
             </div>
+            
         </>
 
     )
@@ -68,3 +60,4 @@ export async function getServerSideProps(req, res) {
         props: { request },
     }
 }
+ 
