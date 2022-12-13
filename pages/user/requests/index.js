@@ -21,8 +21,7 @@ export default function Request(props) {
                 </div>
                 <div className={styles.name}>
                   <b>
-                    {" "}
-                    {request.User.firstName}
+                   Help request to {request.User.firstName}
                     {request.User.lastName}
                   </b>
                 </div>
@@ -46,8 +45,7 @@ export default function Request(props) {
                     </div>
                     <div className={styles.name2}>
                       <b>
-                        {" "}
-                        {request.User.firstName}
+                       Help request to {request.User.firstName}
                         {request.User.lastName}
                       </b>
                     </div>

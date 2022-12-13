@@ -17,7 +17,7 @@ const Requests = props => {
                 <div>
                     <h3>Message from</h3>
                 </div>
-                <br/>
+                <br />
                 <div>
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
