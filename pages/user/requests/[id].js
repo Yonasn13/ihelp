@@ -13,16 +13,19 @@ export default function Request(props) {
         <FaBell className={styles.bell} />
         <div className={styles.form}>
           <h3>Request Details</h3>
+
           <h6>Status </h6>
+
           <div class="shadow p-3 mb-5 bg-body rounded">
             <div class="hstack gap-6">
               <div class="bg-light border">
-                <FaEnvelope /> {request.User.email}
+                <FaEnvelope /> {request.HelperProfile.User.email}
               </div>
             </div>
+
             <div class="vstack gap-3">
               <div class="bg-light border">
-                <FaWhatsapp color="green" /> {request.phoneNumber}
+                <FaWhatsapp color="green" /> {request.HelperProfile.phoneNumber}
               </div>
             </div>
           </div>
