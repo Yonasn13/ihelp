@@ -11,7 +11,16 @@ module.exports = {
         rating: 2,
         createdAt: new Date(),
         updatedAt: new Date ()
-      }], {});
+      },
+      {
+        RequestId: 2,
+        description: 'Hey there! 2',
+        title: 'Permesso di soggiorno',
+        rating: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ], {});
     
   },
 

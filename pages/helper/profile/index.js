@@ -58,6 +58,5 @@ export async function getServerSideProps(req, res) {
     }
 }
 
-
 export default Profile
 

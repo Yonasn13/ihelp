@@ -33,10 +33,11 @@ export default function Request(props) {
                     <FaHandPaper />
                   </div>
                   <div>
-                 {request.message}
+                    <Link href="/requests">{request.message} </Link>
                   </div>
                 </div>
               </div>
+
               {requests.map((request) => (
                 <div key={request.id}>
                   <div className="shadow  p-3 mb-2 bg-body rounded">

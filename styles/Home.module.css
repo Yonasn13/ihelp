@@ -1,9 +1,21 @@
 .container {
-  padding: 0 2rem;
-  line-height: 2cm;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  padding: 0 2rem
+}
+
+.LinkRequestsList {
+  text-decoration: none;
+  color: #312f2f;
+}
+.LinkBtnButtons {
+  text-decoration: none;
+  color: white;
+}
+
+.h3RequestsList {
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+      padding-bottom: 16px;
 }
  .profile{
   padding: 0 2rem;
@@ -24,9 +36,7 @@
 }
 .container2 {
   padding: 16px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+  margin-top: 140px;
 }
 
 .container3 {
@@ -73,7 +83,6 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-
 }
 
 .footlink {
@@ -178,6 +187,82 @@
   justify-content: flex-end;
 }
 
+.callMe {
+  background-color: rgb(216, 185, 190);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  left: 30%;
+  top: 30%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.bell {
+  left: 80%;
+  top: 15%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.abouts {
+  left: 50%;
+  top: 52%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.h {
+  left: 52%;
+  top: 10%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: green;
+}
+.near {
+  background-color: black;
+  height: 115vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 22px;
+}
+
+.clicks {
+  left: 52%;
+  top: 112%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+}
+
+.foot {
+  left: 51%;
+  top: 110%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.name {
+  left: 50%;
+  top: 25%;
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
+
+.name2 {
+  left: 50%;
+  top: 67%;
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
 
 @media (max-width: 600px) {
   .grid {

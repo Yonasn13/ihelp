@@ -22,6 +22,18 @@ const Requests = props => {
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
                 </div>
+                <div className={styles.container2}>
+                    <div className='row'>
+                        <div className='btn btn-success'>
+                            <Link href={`/helper/requests/${userFirstName.id}/message`} className={styles.LinkBtnButtons}>
+                                Accept
+                            </Link>
+                        </div>
+                        <div className='btn btn-danger'>
+                            <Link href={'/helper/requests'} className={styles.LinkBtnButtons}>Decline</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className={styles.btn}>
                 <Link href={'/helper/requests/new'}>
