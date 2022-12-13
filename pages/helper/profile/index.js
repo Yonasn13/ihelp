@@ -12,7 +12,7 @@ const Profile = props => {
     return (
         <>
             <div className={styles.container}>
-                <div class="di"
+                <div className="di"
                     style={{ borderRadius: '40px', overflow: 'hidden' }}>
                     <Image
                         src="/cute-penguin.jpg"
@@ -37,30 +37,12 @@ const Profile = props => {
                 <Link href="/helper/requests">
                     <div className='btn btn-primary'>Requests</div>
                 </Link>
+            </div>
+    </>
 
-const Profile = props => {
-    const helperprofile = props.helperprofile
-    console.log(helperprofile)
-    const helper = helperprofile.User
-    console.log(helper)
-    return (
-        <>
-            <div class="di"
-                style={{ borderRadius: '40px', overflow: 'hidden' }}>
-                <Image
-                    src="/cute-penguin.jpg"
-                    alt="Picture of the author"
-                    width={100}
-                    height={100}
-                />
-            </div>
-            <div>
-                {helper.firstName}
-            </div>
-            <Navbar></Navbar>
-        </>
-    )
+)
 }
+
 export async function getServerSideProps(req, res) {
     const userId = 1
     const helperprofile = await helperProfileController.findUser(userId)
@@ -68,7 +50,6 @@ export async function getServerSideProps(req, res) {
         props: { helperprofile },
     }
 }
-
 
 export default Profile
 
