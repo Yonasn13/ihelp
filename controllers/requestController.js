@@ -2,11 +2,11 @@ import db from '../database'
 
 const requestController = {
   find: async (id) => {
-    const request = await db.Request.findByPk(id)
+    const request = await db.Request.findByPk(id, { include:  db.User })
     return JSON.parse(JSON.stringify(request))
   },
   findAll: async () => {
-    const request = await db.Request.findAll()
+    const request = await db.Request.findAll({ include: db.User })
     return JSON.parse(JSON.stringify(request))
   },
   create: async (data) => {

@@ -9,13 +9,15 @@
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 100%;
   }
+  
   
   .navlink a {
     text-decoration: none;
     color: rgb(224, 213, 213);
   }
+
+ 
   
   .navlink a:hover {
     color: rgb(214, 200, 200);

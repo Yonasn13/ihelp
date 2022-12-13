@@ -1,6 +1,12 @@
+<<<<<<< HEAD:pages/helper/requests/[id]/index.js
 import styles from '../../../../styles/Home.module.css'
 import helperProfileController from '../../../../controllers/helperProfileController'
 import Navbar from '../../../../components/Navbar'
+=======
+import styles from '../../../styles/Home.module.css'
+import helperProfileController from '../../../controllers/helperProfileController'
+import Navbar from '../../../components/Navbar'
+>>>>>>> 89948b816fe37c5bb335dce3af0cf6d764cd62ed:pages/helper/requests/[id].js
 import Link from 'next/link'
 
 const Requests = props => {
@@ -12,10 +18,17 @@ const Requests = props => {
     console.log("userFirstName ", userFirstName)
     return (
         <>
-            <div className={styles.container}>
+            <div className={styles.container2}>
                 <Navbar></Navbar>
                 <div>
+<<<<<<< HEAD:pages/helper/requests/[id]/index.js
                     <h3>Message from:</h3>
+=======
+                    <h3>Message from</h3>
+                </div>
+                <br/>
+                <div>
+>>>>>>> 89948b816fe37c5bb335dce3af0cf6d764cd62ed:pages/helper/requests/[id].js
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
                 </div>
@@ -31,6 +44,15 @@ const Requests = props => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.btn}>
+                <Link href={'/helper/requests/new'}>
+                    <div className='btn btn-success'>accept</div>
+                </Link>
+                <br />
+                <Link href="/">
+                    <div className='btn btn-danger'>decline</div>
+                </Link>
             </div>
         </>
     )
