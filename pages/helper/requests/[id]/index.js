@@ -32,15 +32,6 @@ const Requests = props => {
                     </div>
                 </div>
             </div>
-            <div className={styles.btn}>
-                <Link href={'/helper/requests/new'}>
-                    <div className='btn btn-success'>accept</div>
-                </Link>
-                <br />
-                <Link href="/">
-                    <div className='btn btn-danger'>decline</div>
-                </Link>
-            </div>
         </>
     )
 }
