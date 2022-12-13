@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
   
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
@@ -19,34 +17,22 @@
     "boostrap": "^2.0.0",
     "bootstrap": "^5.2.3",
 
->>>>>>> d924aabe0366a54fe83bba5f74520f1363bf9558
     "@chakra-ui/react": "^2.4.3",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "bootstrap-icons": "^1.10.2",
-<<<<<<< HEAD
-=======
-
->>>>>>> d924aabe0366a54fe83bba5f74520f1363bf9558
     "dotenv": "^16.0.3",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
     "framer-motion": "^7.6.19",
     "next": "13.0.4",
-<<<<<<< HEAD
-    "next-auth": "^4.18.0",
-=======
->>>>>>> d924aabe0366a54fe83bba5f74520f1363bf9558
     "next-pwa": "^5.6.0",
     "pg": "^8.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-<<<<<<< HEAD
-=======
     "next-auth": "^4.18.0",
     "react-icon": "^1.0.0",
->>>>>>> d924aabe0366a54fe83bba5f74520f1363bf9558
     "sass": "^1.56.2",
     "sequelize": "^6.25.7",
     "sequelize-cli": "^6.5.2"

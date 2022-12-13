@@ -5,8 +5,8 @@ import requestController from "../../../controllers/requestController";
 import Navbar from "../../../components/Navbar";
 
 export default function Request(props) {
-const request = props.request
-console.log(request)
+const requests = props.requests
+console.log(requests)
   return (
     <>
       <div className={styles.callMe}>
@@ -73,9 +73,9 @@ console.log(request)
   )
 }
 export async function getServerSideProps(req, res) {
-  const id = req.query.id
-  const helpers = await userController.find(id)
+  const id = 1
+  const requests = await requestController.findAllUser(id)
   return {
-      props: { helpers},
+      props: { requests },
   }
 }

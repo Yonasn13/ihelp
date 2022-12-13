@@ -44,6 +44,7 @@ export async function getServerSideProps(req, res) {
     const { id } = req.query
     const helperProfile = await helperProfileController.find(id)
     console.log(id)
+    console.log(helperProfile)
     return {
         props: { helperProfile },
     }
