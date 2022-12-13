@@ -1,8 +1,8 @@
-
 import requestController from "../../../controllers/requestController";
 import React from "react";
 import styles from "../../../styles/Home.module.css";
 import { FaBell, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import Navbar from "../../../components/Navbar";
 
 export default function Request(props) {
   const request = props.request;
@@ -14,16 +14,13 @@ export default function Request(props) {
         <FaBell className={styles.bell} />
         <div className={styles.form}>
           <h3>Request Details</h3>
-
           <h6>Status </h6>
-
           <div class="shadow p-3 mb-5 bg-body rounded">
             <div class="hstack gap-6">
               <div class="bg-light border">
                 <FaEnvelope /> {request.HelperProfile.User.email}
               </div>
             </div>
-
             <div class="vstack gap-3">
               <div class="bg-light border">
                 <FaWhatsapp color="green" /> {request.HelperProfile.phoneNumber}
@@ -32,7 +29,7 @@ export default function Request(props) {
           </div>
         </div>
       </div>
-      <div></div>
+      <Navbar></Navbar>
     </>
   );
 }

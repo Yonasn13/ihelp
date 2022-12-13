@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles.container2}>
             <div className={styles.helperButton}>
               <Link href={'/helper/requests'}>
-                <div className='row'>
+                <div className={styles.row}>
                   <div className='btn btn-primary'>
                     Helper
                   </div>
@@ -34,11 +34,13 @@ export default function Home() {
             </div>
             <div className={styles.helpButtn}>
               <div className=''>
-                <div className='row'>
-                  <div className='btn btn-outline-success'>
-                    Help
+                <Link href={'/user/helpers'}>
+                  <div className={styles.row}>
+                    <div className='btn btn-outline-success'>
+                      Help
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

@@ -12,10 +12,13 @@ const Requests = props => {
     console.log("userFirstName ", userFirstName)
     return (
         <>
-            <div className={styles.container}>
+            <div className={styles.container2}>
                 <Navbar></Navbar>
                 <div>
-                    <h3>Message from:</h3>
+                    <h3>Message from</h3>
+                </div>
+                <br />
+                <div>
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
                 </div>
