@@ -1,15 +1,22 @@
 import Link from "next/link";
-
 import styles from "../../../styles/Home.module.css";
 import { FaBell, FaUserCircle, FaHandPaper } from "react-icons/fa";
 import requestController from "../../../controllers/requestController";
-
+import Navbar from "../../../components/Navbar";
 export default function Request(props) {
   const requests = props.requests;
   console.log(requests);
   return (
     <>
-      <div className={styles.callMe}>
+      <div>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div className={styles.callMe}></div>
+
         <FaBell className={styles.bell} />
         <div className={styles.form}>
           <h3>List of Requests</h3>
@@ -62,7 +69,7 @@ export default function Request(props) {
                       <div>
                         <FaHandPaper />
                       </div>
-
+  
                       <div>
                         <Link href="/requests/1">{request.message} </Link>
                       </div>
@@ -73,6 +80,7 @@ export default function Request(props) {
             </div>
           ))}
         </div>
+        <Navbar />
       </div>
     </>
   );

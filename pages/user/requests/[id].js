@@ -2,12 +2,23 @@ import requestController from "../../../controllers/requestController";
 import styles from "../../../styles/Home.module.css";
 import { FaBell, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import React from "react";
+import { BsHouseDoor } from "react-icons/bs";
 import ReactStars from "react-stars";
 import Navbar from "../../../components/Navbar";
 
 export default function Request(props) {
   const request = props.request;
   console.log(request);
+  // Display a status icon base on the request status
+
+  let color;
+  if (request.status == "accepted") {
+    color = "green";
+  } else if (request.status == "declined") {
+    color = "red";
+  } else {
+    color = "grey";
+  }
 
   return (
     <>
@@ -17,6 +28,7 @@ export default function Request(props) {
           <h3>Request Details</h3>
 
           <h6>Status </h6>
+          <FaWhatsapp color={color} />
 
           <div class="shadow p-3 mb-5 bg-body rounded">
             <div class="hstack gap-6">
@@ -31,9 +43,14 @@ export default function Request(props) {
               </div>
             </div>
           </div>
-          <ReactStars count={5} size={24} color2={"#ffd700"} />
+
+          <div>
+            Rate a helper
+            <ReactStars count={5} size={24} color2={"#ffd700"} />
+          </div>
         </div>
       </div>
+
       <Navbar />
     </>
   );
