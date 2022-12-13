@@ -15,11 +15,10 @@ const Requests = props => {
             <div className={styles.container2}>
                 <Navbar></Navbar>
                 <div>
-                    <h3>Message from:</h3>
+                    <h3>Message from</h3>
                 </div>
-                <br />
                 <div>
-                    <h4>{userFirstName.firstName}</h4>
+                    <h3>{userFirstName.firstName}</h3>
                     <p>{requests[0].message}</p>
                     <p>{requests[0].status}</p>
                     <form>

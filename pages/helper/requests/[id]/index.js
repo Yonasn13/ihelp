@@ -1,6 +1,6 @@
-import styles from '../../../styles/Home.module.css'
-import helperProfileController from '../../../controllers/helperProfileController'
-import Navbar from '../../../components/Navbar'
+import styles from '../../../../styles/Home.module.css'
+import helperProfileController from '../../../../controllers/helperProfileController'
+import Navbar from '../../../../components/Navbar'
 import Link from 'next/link'
 
 const Requests = props => {
@@ -17,20 +17,23 @@ const Requests = props => {
                 <div>
                     <h3>Message from</h3>
                 </div>
-                <br/>
+                <br />
                 <div>
                     <h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
                 </div>
-            </div>
-            <div className={styles.btn}>
-                <Link href={'/helper/requests/new'}>
-                    <div className='btn btn-success'>accept</div>
-                </Link>
-                <br />
-                <Link href="/">
-                    <div className='btn btn-danger'>decline</div>
-                </Link>
+                <div className={styles.container2}>
+                    <div className='row'>
+                        <div className='btn btn-success'>
+                            <Link href={`/helper/requests/${userFirstName.id}/message`} className={styles.LinkBtnButtons}>
+                                Accept
+                            </Link>
+                        </div>
+                        <div className='btn btn-danger'>
+                            <Link href={'/helper/requests'} className={styles.LinkBtnButtons}>Decline</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

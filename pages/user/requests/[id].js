@@ -2,6 +2,7 @@ import requestController from "../../../controllers/requestController";
 import React from "react";
 import styles from "../../../styles/Home.module.css";
 import { FaBell, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import Navbar from "../../../components/Navbar";
 
 export default function Request(props) {
   const request = props.request;
@@ -28,7 +29,7 @@ export default function Request(props) {
           </div>
         </div>
       </div>
-      <div></div>
+      <Navbar></Navbar>
     </>
   );
 }

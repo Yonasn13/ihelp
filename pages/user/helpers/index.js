@@ -2,19 +2,23 @@ import helperProfileController from "../../../controllers/helperProfileControlle
 import Link from "next/link"
 import Navbar from "../../../components/Navbar"
 import styles from '../../../styles/Search.module.css'
+import { useEffect, useState } from "react"
 
-export default function helperProfile(props) {
+export default function HelperProfile(props) {
   const helperProfiles = props.helperProfiles
+  /*const [query, setQuery] = useState("")
+ const handleChange = event => setQuery(event.target.value)
+ useEffect(() => {}, [query])
+setFilteredHelperProfiles()*/
+  
   console.log(helperProfiles)
 
   return (
     <>
       <div className={styles.search}>
         <form action="" class="search-bar">
-          <input type="search" name="search" placeholder="search..." pattern=".*\S.*" required />
-          <button class="search-button" type="submit" >
-            <span>🔍</span>
-          </button>
+
+          
         </form>
       </div>
       <div className={styles.profile}>
