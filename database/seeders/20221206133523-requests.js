@@ -17,6 +17,34 @@ module.exports = {
         message: 'Hello I am Yusuf from..',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        HelperProfileId: 3,
+        UserId: 3,
+        message: 'Hello I am Eric from..',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        HelperProfileId: 4,
+        UserId: 4,
+        message: 'Hello I am Nour from..',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        HelperProfileId: 5,
+        UserId: 5,
+        message: 'Hello I am Anthony from..',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        HelperProfileId: 6,
+        UserId: 6,
+        message: 'Hello I am Bob from..',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {});
     
