@@ -18,19 +18,18 @@ export default function Request(props) {
           <div class="shadow p-3 mb-5 bg-body rounded">
             <div class="hstack gap-6">
               <div class="bg-light border">
-                <FaEnvelope /> {request.User.email}
+                <FaEnvelope /> {request.HelperProfile.User.email}
               </div>
             </div>
             <div class="vstack gap-3">
               <div class="bg-light border">
-                <FaWhatsapp color="green" /> {request.User.phoneNumber}
+                <FaWhatsapp color="green" /> {request.HelperProfile.phoneNumber}
               </div>
-              <Navbar></Navbar>
             </div>
           </div>
         </div>
       </div>
-      <div></div>
+      <Navbar></Navbar>
     </>
   );
 }

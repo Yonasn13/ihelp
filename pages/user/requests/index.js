@@ -21,8 +21,8 @@ export default function Request(props) {
                 </div>
                 <div className={styles.name}>
                   <b>
-                   Help request to {request.User.firstName}
-                    {request.User.lastName}
+                    Help request to {request.HelperProfile.User.firstName}
+                    {request.HelperProfile.User.lastName}
                   </b>
                 </div>
                 <div class="hstack gap-2">
@@ -32,22 +32,21 @@ export default function Request(props) {
                   <div>
                     <FaHandPaper />
                   </div>
-                  <div>
-                    <Link href="/requests">{request.message} </Link>
-                  </div>
+
                 </div>
               </div>
 
               {requests.map((request) => (
                 <div key={request.id}>
+                  <Link href={`/user/requests/${request.HelperProfile.User.id}`}>
                   <div className="shadow  p-3 mb-2 bg-body rounded">
                     <div className="invisible">
                       <FaHandPaper />
                     </div>
                     <div className={styles.name2}>
                       <b>
-                       Help request to {request.User.firstName}
-                        {request.User.lastName}
+                        Help request to {request.HelperProfile.User.firstName}
+                        {request.HelperProfile.User.lastName}
                       </b>
                     </div>
                     <div class="hstack gap-2">
@@ -58,12 +57,12 @@ export default function Request(props) {
                         <FaHandPaper />
                       </div>
                       <div>
-                      <Link href={`/user/requests/${request.User.id}`}>{request.message} </Link>
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>
-                
+
               ))}
             </div>
           ))}
