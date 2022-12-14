@@ -16,7 +16,7 @@ const initRequest = (sequelize, DataTypes) => {
       HelperProfileId: DataTypes.INTEGER,
       UserId: DataTypes.INTEGER,
       message: DataTypes.STRING,
-      status: DataTypes.STRING,
+      status: DataTypes.BOOLEAN,
     },
     {
       sequelize,

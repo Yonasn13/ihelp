@@ -13,17 +13,17 @@ export default function Navbar(props) {
   return (
     <>
       <nav className={styles.navbar}>
-        <div class="shadow-sm p-1 mb-1 bg-body rounded">
+        <div className="shadow-sm p-1 mb-1 bg-body rounded">
           <Link href={"/"}>
             <BsHouseDoor size="30" />
           </Link>
         </div>
-        <div class="shadow-sm p-1 mb-1 bg-body rounded">
+        <div className="shadow-sm p-1 mb-1 bg-body rounded">
           <Link href={"/about"}>
             <BsInfoCircle size="30" />
           </Link>
         </div>
-        <div class="shadow-sm p-1 mb-1 bg-body rounded">
+        <div className="shadow-sm p-1 mb-1 bg-body rounded">
           <Link href={"/search"}>
             <BsSearch size="30" />
                   </Link>
@@ -31,7 +31,7 @@ export default function Navbar(props) {
           <input type="text" placeholder="Search"/>
         </div>
 
-        <div class="shadow-sm p-1 mb-1 bg-body rounded">
+        <div className="shadow-sm p-1 mb-1 bg-body rounded">
           <Link href={"/helper/profile"}>
             <BsPersonCircle size="30" />
           </Link>
