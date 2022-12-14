@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem
+  padding: 0 2rem;
+  margin-top: 60px;
+  line-height: 1cm;
 }
 
 .LinkRequestsList {
@@ -23,7 +25,7 @@
       padding-bottom: 16px;
 }
  .profile{
-  padding: 0 2rem;
+  padding: 2rem;
   line-height: 0.6cm;
   margin-top: 50px;
  }
@@ -32,7 +34,7 @@
   padding: auto;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .row{
@@ -42,11 +44,28 @@
 .container2 {
   padding: 16px;
   margin-top: 140px;
+
 }
+
+.contain {
+  padding: 16px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.contain2 {
+  padding: 16px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+} 
 
 .container3 {
   padding: 16px;
-  margin-top: 120px;
+  margin-top: 0px;
   display: flex;
 }
 

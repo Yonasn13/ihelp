@@ -25,7 +25,9 @@ export default function Request(props) {
         <FaBell className={styles.bell} />
         <div className={styles.form}>
           <h3>Request Details</h3>
-          <h6>Status </h6>
+          <h6>
+            Status <FaCheckCircle color={color} />
+          </h6>
           <div className="shadow p-3 mb-5 bg-body rounded">
             <div className="hstack gap-6">
               <div className="bg-light border">

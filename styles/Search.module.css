@@ -4,6 +4,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    margin-left: 0%;
 }
 
 .main {
@@ -25,7 +26,7 @@
 .button {
     font: 1em Hind, san-serif;
     line-height: 1.5em;
-} 
+}
 
 .input {
     font: 1em Hind, san-serif;
@@ -62,8 +63,8 @@
 
 .search-bar input,
 .search-btn {
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .search-bar input:invalid:not(:focus),
@@ -86,7 +87,7 @@
     margin: auto;
     padding: 1.5em;
     justify-content: center;
-    max-width: 30em;
+    max-width: 50em;
 }
 
 .search-bar input {

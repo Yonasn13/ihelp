@@ -12,7 +12,7 @@ const Profile = props => {
     if (helperprofile) {
         return (
             <>
-                <div className={styles.container}>
+                <div className={styles.contain}>
                     <div
                         style={{ borderRadius: '40px', overflow: 'hidden' }}>
                         <Image
@@ -23,7 +23,7 @@ const Profile = props => {
                         />
                     </div>
                 </div>
-                <div className={styles.container2}>
+                <div className={styles.contain2}>
                     <h3>
                         {helper.firstName}
                         {helper.lastName}
