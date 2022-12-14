@@ -27,7 +27,7 @@ export default function Home() {
               <Link href={'/helper/requests'}>
                 <div className='row'>
                   <div className='btn btn-primary'>
-                    Help others 
+                    Help others 💪🏼
                   </div>
                 </div>
               </Link>
