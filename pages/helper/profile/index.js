@@ -13,7 +13,7 @@ const Profile = props => {
         return (
             <>
                 <div className={styles.container}>
-                    <div class="di"
+                    <div
                         style={{ borderRadius: '40px', overflow: 'hidden' }}>
                         <Image
                             src="/cute-penguin.jpg"

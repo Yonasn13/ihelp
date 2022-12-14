@@ -11,6 +11,11 @@
   color: white;
 }
 
+.h3HelpersList {
+      display: flex;
+      justify-content: center;
+}
+
 .h3RequestsList {
       display: flex;
       justify-content: center;

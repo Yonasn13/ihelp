@@ -25,7 +25,7 @@ export default function Request(props) {
                     {request.HelperProfile.User.lastName}
                   </b>
                 </div>
-                <div class="hstack gap-2">
+                <div className="hstack gap-2">
                   <div>
                     <FaUserCircle size="40" />
                   </div>
@@ -48,7 +48,7 @@ export default function Request(props) {
                         {request.HelperProfile.User.lastName}
                       </b>
                     </div>
-                    <div class="hstack gap-2">
+                    <div className="hstack gap-2">
                       <div>
                         <FaUserCircle size="40" />
                       </div>
@@ -72,7 +72,8 @@ export default function Request(props) {
   );
 }
 export async function getServerSideProps(req, res) {
-  const requests = await requestController.findAll();
+  const userId = 1
+  const requests = await requestController.findAllUser(userId);
   return {
     props: { requests },
     // will be passed to the page component as props

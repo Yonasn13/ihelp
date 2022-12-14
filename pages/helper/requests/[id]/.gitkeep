@@ -1,7 +1,6 @@
 import styles from '../../../../styles/Home.module.css'
 import helperProfileController from '../../../../controllers/helperProfileController'
 import Navbar from '../../../../components/Navbar'
-import Link from 'next/link'
 import { useState } from 'react'
 
 const Requests = props => {

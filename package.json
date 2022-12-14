@@ -31,11 +31,8 @@
     "pg": "^8.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-<<<<<<< HEAD
-=======
     "react-icons": "^4.7.1",
     "next-auth": "^4.18.0",
->>>>>>> d924aabe0366a54fe83bba5f74520f1363bf9558
     "react-icon": "^1.0.0",
     "sass": "^1.56.2",
     "sequelize": "^6.25.7",
