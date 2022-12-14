@@ -28,7 +28,7 @@
   margin-top: 50px;
  }
 
-.btn{
+.btn {
   padding: auto;
   display: flex;
   justify-content: center;
@@ -193,7 +193,7 @@
 }
 
 .callMe {
-  background-color: rgb(216, 185, 190);
+  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
