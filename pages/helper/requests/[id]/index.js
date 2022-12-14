@@ -2,6 +2,7 @@ import styles from '../../../../styles/Home.module.css'
 import helperProfileController from '../../../../controllers/helperProfileController'
 import Navbar from '../../../../components/Navbar'
 import Link from 'next/link'
+import { Card } from '@chakra-ui/react'
 
 const Requests = props => {
     const helper = props.helper
@@ -12,29 +13,32 @@ const Requests = props => {
     console.log("userFirstName ", userFirstName)
     return (
         <>
-            <div className={styles.container2}>
-                <Navbar></Navbar>
+            <div className={styles.container}>
                 <div>
-                    <h3>Message from</h3>
-                </div>
-                <br />
-                <div>
-                    <h4>{userFirstName.firstName}</h4>
+                    <h3>Message from:</h3>
+                    <Card ><h4>{userFirstName.firstName}</h4>
                     <p>{requests[0].message}</p>
+                    </Card>
+
                 </div>
                 <div className={styles.container2}>
-                    <div className='row'>
-                        <div className='btn btn-success'>
-                            <Link href={`/helper/requests/${userFirstName.id}/message`} className={styles.LinkBtnButtons}>
-                                Accept
-                            </Link>
+                    <div className={styles.helperButton}>
+                        <div className='row'>
+                            <div className='btn btn-success'>
+                                <Link href={`/helper/requests/${userFirstName.id}/response`} className={styles.LinkBtnButtons}>
+                                    Accept
+                                </Link>
+                            </div>
                         </div>
+                    </div>
+                    <div className='row'>
                         <div className='btn btn-danger'>
                             <Link href={'/helper/requests'} className={styles.LinkBtnButtons}>Decline</Link>
                         </div>
                     </div>
                 </div>
             </div>
+            <Navbar></Navbar>
         </>
     )
 }

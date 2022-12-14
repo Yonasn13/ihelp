@@ -12,7 +12,7 @@ export default function helperProfile(props) {
             <div className={styles.profile}>
                 <h2>Profile</h2>
 
-                <div class="di"
+                <div
                     style={{ borderRadius: '40px', overflow: 'hidden' }}>
                     <Image
                         src="/cute-penguin.jpg"
@@ -28,10 +28,10 @@ export default function helperProfile(props) {
                 <p> Language: {helperProfile.language}</p>
                 <p> Description: {helperProfile.description}</p>
                 <div>
-                    <form action={`/user/requests`} method="POST">
-                        <label for="message">Request message:</label>
-                        <br />
-                        <input type="text" id="message" name="message" />
+                    <form action={'/api/userRequest'} method="POST">
+                        <label for="message">Request message:</label> 
+                        <br/>
+                        <input type="text" id="message" name="message" /><br />
                         <input type="submit" value="Send" />
                     </form>
                 </div>

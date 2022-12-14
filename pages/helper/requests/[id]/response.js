@@ -1,6 +1,6 @@
-import styles from '../../../styles/Home.module.css'
-import helperProfileController from '../../../controllers/helperProfileController'
-import Navbar from '../../../components/Navbar'
+import styles from '../../../../styles/Home.module.css'
+import helperProfileController from '../../../../controllers/helperProfileController'
+import Navbar from '../../../../components/Navbar'
 import Link from 'next/link'
 
 const Requests = props => {
@@ -12,27 +12,25 @@ const Requests = props => {
     console.log("userFirstName ", userFirstName)
     return (
         <>
-            <div className={styles.container2}>
-                <Navbar></Navbar>
+            <div className={styles.container}>
                 <div>
-                    <h3>Message from</h3>
+                    <h3>Message from:</h3>
                 </div>
                 <div>
                     <h3>{userFirstName.firstName}</h3>
                     <p>{requests[0].message}</p>
                     <p>{requests[0].status}</p>
-                    <form>
+                    <form action='/api/helperResponse' method='POST'>
                         <label htmlFor="message">Reply: </label><br />
-                        <label htmlFor="message"></label><br />
-                        <input type="text" id="message" name="message" /><br /><br />
-                        <Link href={'/helper/requests'}>
-                            <input type="submit" value="send" />
-                        </Link>
+                        <br />
+                        <textarea type="text" id="message" name="message" /><br />
+                        <input type='text' hidden={true} defaultValue={requests.U} />
+                        <input type="submit" value="    Send    " className='btn btn-success'/>
 
                     </form>
                 </div>
             </div>
-
+            <Navbar></Navbar>
         </>
     )
 }

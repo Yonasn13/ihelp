@@ -12,24 +12,26 @@ const Requests = props => {
     console.log("userFirstName ", userFirstName)
     return (
         <>
-            <div className={styles.container2}>
-                <Navbar></Navbar>
+            <div className={styles.container}>
                 <div>
-                    <h3 className={styles.h3RequestsList}>list of Requests</h3>
-                </div>
-                <div>
-                    <ul>
-                        {requests.map(request => (
-                            <li request={request} key={request.id} className={styles.card}>
-                                <Link href={`/helper/requests/${userFirstName.id}`} className={styles.LinkRequestsList}>
-                                    {userFirstName.firstName} wants to contact you
-                                </Link>
-                            </li>
-                        )
-                        )}
-                    </ul>
+                    <div>
+                        <h3 className={styles.h3RequestsList}>list of Requests</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            {requests.map(request => (
+                                <li request={request} key={request.id} className={styles.card}>
+                                    <Link href={`/helper/requests/${userFirstName.id}`} className={styles.LinkRequestsList}>
+                                        {userFirstName.firstName} wants to contact you
+                                    </Link>
+                                </li>
+                            )
+                            )}
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <Navbar></Navbar>
         </>
     )
 }

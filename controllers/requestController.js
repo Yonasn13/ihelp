@@ -5,6 +5,10 @@ const requestController = {
     const request = await db.Request.findByPk(id, { include: { model: db.HelperProfile, include: db.User } })
     return JSON.parse(JSON.stringify(request))
   },
+  findAllUser: async (id) => {
+    const request = await db.Request.findAll({ where: {UserId: id }, include: { model: db.HelperProfile, include: db.User } })
+    return JSON.parse(JSON.stringify(request))
+  },
   findAll: async () => {
     const request = await db.Request.findAll({ include: { model: db.HelperProfile, include: db.User } })
     return JSON.parse(JSON.stringify(request))
