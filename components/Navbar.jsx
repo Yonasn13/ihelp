@@ -23,13 +23,6 @@ export default function Navbar(props) {
             <BsInfoCircle size="30" />
           </Link>
         </div>
-        <div class="shadow-sm p-1 mb-1 bg-body rounded">
-          <Link href={"/search"}>
-            <BsSearch size="30" />
-                  </Link>
-                  
-          <input type="text" placeholder="Search"/>
-        </div>
 
         <div class="shadow-sm p-1 mb-1 bg-body rounded">
           <Link href={"/helper/profile"}>

@@ -9,7 +9,7 @@ export default function Home() {
       <div className=''>
         <div className={styles.halfPageGreen}>
           <div>
-            <Image src={'/ihelp-logo.png'} alt="/ihelp logo" width={200} height={150} />
+            <Image src={'/Ihelp logo.png'} alt="/ihelp logo" width={200} height={190} />
           </div>
         </div>
         <div className={styles.halfPageWhite}>
