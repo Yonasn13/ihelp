@@ -1,20 +1,25 @@
 .navbar {
-  background-color: rgb(213, 228, 227);
+  background-color: rgb(225, 251, 251);
   height: 8vh;
   width: 100%;
-  color: rgb(184, 184, 184);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   position: fixed;
   bottom: 0;
+  border: rgb(211, 240, 201);
+  border-radius: 0.3cm;
 }
 
 .a {
   color: #091931;
   text-decoration: none;
 
+
+}
+.a :hover{
+  color: rgb(223, 236, 235);
 }
 
 .navlink a {
