@@ -21,19 +21,19 @@ export default function HelperProfile(props) {
     <>
       <div className={styles.search}>
         <input type="text" id="search" placeholder="Search by city, language..." onChange={handleChange} />
-        <button class="search button" type="submit"><BsSearch size="20" /></button>
+        <button className="search button" type="submit"><BsSearch size="20" /></button>
       </div>
-      <div className={styles.container}>
+      <div>
         <h3 className={style.h3HelpersList}>Helpers</h3>
         <ul>
           {helpers.map(helperProfile => (
-            <li key={helperProfile.id} className={style.card}>
+            <p key={helperProfile.id} className={style.card}>
 
-              <Link href={`/user/helpers/${helperProfile.id}`}>
-                {<h3 className={style.h3HelpersList}>{helperProfile.User.firstName} {helperProfile.User.lastName} </h3>}
-                <h6 className={style.LinkRequestsList}>City: {helperProfile.city}, Language: {helperProfile.language}</h6>
+              <Link href={`/user/helpers/${helperProfile.id}`} className={style.LinkRequestsList}>
+                <h3 className={style.h3HelpersList}>{helperProfile.User.firstName} {helperProfile.User.lastName} </h3>
+                <h6 >City: {helperProfile.city}, Language: {helperProfile.language}</h6>
               </Link>
-            </li>
+            </p>
           ))}
         </ul>
       </div>

@@ -15,19 +15,17 @@ const Requests = props => {
             <div className={styles.container}>
                 <div>
                     <div>
-                        <h3 className={styles.h3RequestsList}>list of Requests</h3>
+                        <h3 className={styles.h3RequestsList}>List of Requests</h3>
                     </div>
                     <div>
-                        <ul>
                             {requests.map(request => (
-                                <li request={request} key={request.id} className={styles.card}>
+                                <p request={request} key={request.id} className={styles.card}>
                                     <Link href={`/helper/requests/${userFirstName.id}`} className={styles.LinkRequestsList}>
                                         {userFirstName.firstName} wants to contact you
                                     </Link>
-                                </li>
+                                </p>
                             )
                             )}
-                        </ul>
                     </div>
                 </div>
             </div>

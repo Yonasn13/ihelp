@@ -4,6 +4,11 @@
   line-height: 1cm;
 }
 
+.container4 {
+  padding: 0 2rem;
+  margin-top: 0px;
+}
+
 .LinkRequestsList {
   text-decoration: none;
   color: #312f2f;
@@ -21,7 +26,7 @@
 .h3RequestsList {
       display: flex;
       justify-content: center;
-      margin-top: 120px;
+      margin-top: 16px;
       padding-bottom: 16px;
 }
  .profile{
@@ -43,7 +48,7 @@
 }
 .container2 {
   padding: 16px;
-  margin-top: 140px;
+  margin-top: 170px;
 
 }
 

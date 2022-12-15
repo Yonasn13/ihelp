@@ -6,25 +6,23 @@ import {
   BsPersonCircle,
   BsSearch,
 } from "react-icons/bs";
-
 export default function Navbar(props) {
   // fix the routes so that they send to the correct path
   const navbar = props.navbar;
   return (
     <>
       <nav className={styles.navbar}>
-        <div className="shadow-sm p-1 mb-1 bg-body rounded">
+        <div>
           <Link href={"/"}>
             <BsHouseDoor size="30" />
           </Link>
         </div>
-        <div className="shadow-sm p-1 mb-1 bg-body rounded">
+        <div>
           <Link href={"/about"}>
             <BsInfoCircle size="30" />
           </Link>
         </div>
-
-        <div class="shadow-sm p-1 mb-1 rounded">
+        <div>
           <Link href={"/helper/profile"}>
             <BsPersonCircle size="30" />
           </Link>
