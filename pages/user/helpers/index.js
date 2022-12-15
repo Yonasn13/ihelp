@@ -36,6 +36,8 @@ export default function HelperProfile(props) {
             </p>
           ))}
         </ul>
+        < br />
+        <br />
       </div>
       <Navbar></Navbar>
     </>
