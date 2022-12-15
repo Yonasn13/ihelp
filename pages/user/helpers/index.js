@@ -27,16 +27,17 @@ export default function HelperProfile(props) {
         <h3 className={style.h3HelpersList}>Helpers</h3>
         <ul>
           {helpers.map(helperProfile => (
-            <p key={helperProfile.id} className={style.card}>
+            <div key={helperProfile.id} className={style.card}>
 
               <Link href={`/user/helpers/${helperProfile.id}`} className={style.LinkRequestsList}>
                 <h3 className={style.h3HelpersList}>{helperProfile.User.firstName} {helperProfile.User.lastName} </h3>
                 <h6 >City: {helperProfile.city}, Language: {helperProfile.language}</h6>
               </Link>
-            </p>
+            </div>
           ))}
         </ul>
         < br />
+        <br />
         <br />
       </div>
       <Navbar></Navbar>

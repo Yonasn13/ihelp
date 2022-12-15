@@ -4,6 +4,48 @@
   line-height: 1cm;
 }
 
+.rate {
+  margin-top: 600px;
+}
+
+.name2 {
+  left: 40%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
+
+.callMe {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #111;
+}
+
+
+.form {
+  left: 30%;
+  top: 30%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin-left: 80px;
+  line-height: 1cm;
+}
+
+.a {
+  color: #091931;
+  text-decoration: none;
+
+
+}
+
+.a :hover {
+  color: rgb(104, 138, 135);
+}
+
+
 .container4 {
   padding: 0 2rem;
   margin-top: 0px;
@@ -13,27 +55,29 @@
   text-decoration: none;
   color: #312f2f;
 }
+
 .LinkBtnButtons {
   text-decoration: none;
   color: white;
 }
 
 .h3HelpersList {
-      display: flex;
-      justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .h3RequestsList {
-      display: flex;
-      justify-content: center;
-      margin-top: 16px;
-      padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  padding-bottom: 16px;
 }
- .profile{
+
+.profile {
   padding: 2rem;
   line-height: 0.6cm;
   margin-top: 50px;
- }
+}
 
 .btn {
   padding: auto;
@@ -42,10 +86,11 @@
   margin-top: 70px;
 }
 
-.row{
+.row {
   display: flex;
-  
+
 }
+
 .container2 {
   padding: 16px;
   margin-top: 170px;
@@ -66,7 +111,7 @@
   display: flex;
   justify-content: center;
 
-} 
+}
 
 .container3 {
   padding: 16px;
@@ -216,26 +261,13 @@
   justify-content: flex-end;
 }
 
-.callMe {
-  background-color: white;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  left: 30%;
-  top: 30%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
 .bell {
   left: 80%;
   top: 15%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
+
 .abouts {
   left: 50%;
   top: 52%;
@@ -243,6 +275,7 @@
   transform: translate(-50%, -50%);
   color: white;
 }
+
 .h {
   left: 52%;
   top: 10%;
@@ -250,6 +283,7 @@
   transform: translate(-50%, -50%);
   color: green;
 }
+
 .near {
   background-color: black;
   height: 115vh;
@@ -280,15 +314,8 @@
 }
 
 .name {
-  left: 50%;
+  left: 55%;
   top: 25%;
-  position: absolute;
-  transform: translate(-30%, -30%);
-}
-
-.name2 {
-  left: 50%;
-  top: 67%;
   position: absolute;
   transform: translate(-30%, -30%);
 }
@@ -301,13 +328,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }

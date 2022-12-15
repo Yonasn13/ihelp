@@ -31,7 +31,8 @@ export default function helperProfile(props) {
                         <textarea type="text" id="message" name="message" />
                         <br />
                         <br />
-                        <input type='text' hidden={true} defaultValue={helperProfile.UserId} />
+                        <input type='text' name="UserId" hidden={true} defaultValue={helperProfile.UserId} />
+                        <input type='text' name="HelperProfileId" hidden={true} defaultValue={helperProfile.id} />
                         <input type="submit" value="Send" className='btn btn-success'/>
                     </form>
                 </div>

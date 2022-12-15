@@ -20,7 +20,9 @@ const requestController = {
   },
 
   create: async (data) => {
-    const request = await db.Request.create(data)
+    console.log(data)
+    const { HelperProfileId, UserId, message} = data
+    const request = await db.Request.create({ HelperProfileId, UserId, message})
     return JSON.parse(JSON.stringify(request))
   }
 }

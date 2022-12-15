@@ -12,19 +12,19 @@ export default function Navbar(props) {
   return (
     <>
       <nav className={styles.navbar}>
-        <div class="shadow-sm p-1 rounded">
-          <Link href={"/"}>
+        <div class=" p-1 rounded">
+          <Link href={"/"} className={styles.a}>
             <BsHouseDoor size="30" />
           </Link>
         </div>
-        <div class="shadow-sm p-1 mb-1 rounded">
-          <Link href={"/about"}>
+        <div class=" p-1 mb-1 rounded">
+          <Link href={"/about/about"} className={styles.a}>
             <BsInfoCircle size="30" />
           </Link>
         </div>
 
-        <div class="shadow-sm p-1 mb-1 rounded">
-          <Link href={"/helper/profile"}>
+        <div class=" p-1 mb-1 rounded">
+          <Link href={"/helper/profile"} className={styles.a}>
             <BsPersonCircle size="30" />
           </Link>
         </div>
