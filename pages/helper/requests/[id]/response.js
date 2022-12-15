@@ -1,11 +1,10 @@
 import styles from '../../../../styles/Home.module.css'
 import helperProfileController from '../../../../controllers/helperProfileController'
 import Navbar from '../../../../components/Navbar'
-import Link from 'next/link'
+import requestController from '../../../../controllers/requestController'
 
 const Requests = props => {
-    const helper = props.helper
-    const requests = helper.Requests
+    const request = props.request
 
     const user = props.user
     const userFirstName = user.User
@@ -18,13 +17,14 @@ const Requests = props => {
                 </div>
                 <div>
                     <h3>{userFirstName.firstName}</h3>
-                    <p>{requests[0].message}</p>
-                    <p>{requests[0].status}</p>
+                    <p>{request.message}</p>
+                    <p>{request.status}</p>
                     <form action='/api/helperResponse' method='POST'>
                         <label htmlFor="message">Reply: </label><br />
                         <br />
-                        <textarea type="text" id="message" name="message" /><br />
-                        <input type='text' hidden={true} defaultValue={requests.U} />
+                        <textarea type="text" id="message" name="message" /><br /><br />
+                        <input type='text' hidden={true} defaultValue={request.UserId} />
+                        <input type='text' hidden={true} defaultValue={request.HelperProfileId} />
                         <input type="submit" value="    Send    " className='btn btn-success'/>
 
                     </form>
@@ -37,12 +37,14 @@ const Requests = props => {
 
 export async function getServerSideProps(req, res) {
     const userId = 1
+    const { id } = req.query
+    const request = await requestController.find(id)
     const helper = await helperProfileController.findByUser(userId)
     const user = await helperProfileController.findUser(userId)
     console.log(user)
     console.log(helper)
     return (
-        { props: { helper, user } }
+        { props: { helper, user, request } }
     )
 }
 

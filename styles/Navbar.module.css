@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(225, 251, 251);
+  background-color: rgb(213, 228, 227);
   height: 8vh;
   width: 100%;
   display: flex;
@@ -11,7 +11,6 @@
   border: rgb(211, 240, 201);
   border-radius: 0.3cm;
 }
-
 .a {
   color: #091931;
   text-decoration: none;
@@ -21,24 +20,20 @@
 .a :hover{
   color: rgb(223, 236, 235);
 }
-
 .navlink a {
   text-decoration: none;
   color: rgb(34, 7, 7);
 }
-
 .navlink a:hover {
   color: rgb(214, 200, 200);
   background-color: rgb(3, 29, 31);
 }
-
 .avatar {
   height: 3.5vh;
   width: 3.5vh;
   object-fit: cover;
   border-radius: 50%;
 }
-
 .pass {
   left: 50%;
   top: 50%;

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 
 export default function Aboutinfo() {
   return (
@@ -38,9 +38,9 @@ export default function Aboutinfo() {
           </p>
           <p>
             Are you fabulous a human who likes to help in any situation? Then
-            you're at the right place. You could volunteer yourself help
+            you are at the right place. You could volunteer yourself help
             strangers get their permit of stay and make life easy for them.
-            create your own helper's page today and start your journey
+            create your own helpers page today and start your journey
           </p>
 
           <div className={styles.clicks}>

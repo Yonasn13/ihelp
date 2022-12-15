@@ -54,7 +54,7 @@ export default function Request(props) {
                           {request.HelperProfile.User.lastName}
                         </b>
                       </div>
-                      <div class="hstack gap-2">
+                      <div className="hstack gap-2">
                         <div>
                           <FaUserCircle size="40" />
                         </div>

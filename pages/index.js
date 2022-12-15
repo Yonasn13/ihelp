@@ -17,9 +17,9 @@ export default function Home() {
             <h1>Welcome to I-help!</h1>
           </div>
           <div className={styles.paragdiv}>
-            <p>Part of being a person is about helping others.</p>
+            <p>{"Part of being a person is about helping others."}</p>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container4}>
             <p className={styles.paragp}>-Regis Murayi</p>
           </div>
           <div className={styles.container2}>
@@ -27,7 +27,7 @@ export default function Home() {
               <Link href={'/helper/requests'}>
                 <div className='row'>
                   <div className='btn btn-primary'>
-                    Help others 💪🏼
+                    Help Immigrants
                   </div>
                 </div>
               </Link>

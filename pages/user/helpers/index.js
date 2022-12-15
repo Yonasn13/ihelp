@@ -4,6 +4,7 @@ import Navbar from "../../../components/Navbar"
 import styles from '../../../styles/Search.module.css'
 import { BsSearch, } from "react-icons/bs";
 import { useState } from "react"
+import style from '../../../styles/Home.module.css'
 
 export default function HelperProfile(props) {
   const helperProfiles = props.helperProfiles
@@ -20,21 +21,21 @@ export default function HelperProfile(props) {
     <>
       <div className={styles.search}>
         <input type="text" id="search" placeholder="Search by city, language..." onChange={handleChange} />
-        <button class="search button" type="submit"><BsSearch size="20" /></button>
+        <button className="search button" type="submit"><BsSearch size="20" /></button>
       </div>
-      <div className={styles.container}>
-      <h3 >Helpers</h3>
-      <ul>
-        {helpers.map(helperProfile => (
-          <li key={helperProfile.id}>
+      <div>
+        <h3 className={style.h3HelpersList}>Helpers</h3>
+        <ul>
+          {helpers.map(helperProfile => (
+            <p key={helperProfile.id} className={style.card}>
 
-            <Link href={`/user/helpers/${helperProfile.id}`}>
-              {<h3 className={styles.h3HelpersList}>{helperProfile.User.firstName} {helperProfile.User.lastName} </h3>}
-              <p className={styles.LinkRequestsList}>live in {helperProfile.city}, speak {helperProfile.language}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+              <Link href={`/user/helpers/${helperProfile.id}`} className={style.LinkRequestsList}>
+                <h3 className={style.h3HelpersList}>{helperProfile.User.firstName} {helperProfile.User.lastName} </h3>
+                <h6 >City: {helperProfile.city}, Language: {helperProfile.language}</h6>
+              </Link>
+            </p>
+          ))}
+        </ul>
       </div>
       <Navbar></Navbar>
     </>

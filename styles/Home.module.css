@@ -26,7 +26,7 @@
 .h3RequestsList {
       display: flex;
       justify-content: center;
-      margin-top: 120px;
+      margin-top: 16px;
       padding-bottom: 16px;
 }
  .profile{
@@ -48,7 +48,7 @@
 }
 .container2 {
   padding: 16px;
-  margin-top: 140px;
+  margin-top: 170px;
 
 }
 
@@ -172,7 +172,7 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #ada1a1;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
