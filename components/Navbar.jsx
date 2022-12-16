@@ -18,7 +18,7 @@ export default function Navbar(props) {
           </Link>
         </div>
         <div className=" p-1 mb-1 rounded">
-          <Link href={"/about/about"} className={styles.a}>
+          <Link href={"/about"} className={styles.a}>
             <BsInfoCircle size="30" />
           </Link>
         </div>
