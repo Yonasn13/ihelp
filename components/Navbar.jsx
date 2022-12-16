@@ -16,7 +16,6 @@ export default function Navbar(props) {
           <Link href={"/"} className={styles.a}>
             <BsHouseDoor size="30" />
           </Link>
-          
         </div>
         <div className=" p-1 mb-1 rounded">
           <Link href={"/about"} className={styles.a}>
