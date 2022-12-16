@@ -13,10 +13,10 @@ export default function helperProfile(props) {
                 <div
                     style={{ borderRadius: '40px', overflow: 'hidden' }} className={styles.h3HelpersList}>
                     <Image
-                        src="/cute-penguin.jpg"
+                        src="/profile.png"
                         alt="Picture of the author"
-                        width={100}
-                        height={30}
+                        width={50}
+                        height={50}
                     />
                 </div>
                 <br />

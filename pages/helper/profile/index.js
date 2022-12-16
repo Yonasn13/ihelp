@@ -14,7 +14,7 @@ const Profile = props => {
                         <div
                             style={{ borderRadius: '40px', overflow: 'hidden' }}>
                             <Image
-                                src="/cute-penguin.jpg"
+                                src="/profile.png"
                                 alt="Picture of the author"
                                 width={100}
                                 height={100}

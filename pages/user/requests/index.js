@@ -8,41 +8,34 @@ export default function Request(props) {
   console.log(requests)
   return (
     <>
-      <div>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <div className={styles.callMe}></div>
-        <div className={styles.form}>
-          <h3>List of Requests</h3>
-          {requests.map((request) => (
-            <div key={request.id}>
-              {requests.map((request) => (
-                <div key={request.id}>
-                  <div className={styles.LinkRequestsList}>
-                  <Link href={`/user/requests/${request.HelperProfile.User.id}`} className={styles.a}>
-                    <div className="shadow  p-3 mb-2 bg-body rounded">
-                      <div className={styles.name2}>
-                        <b>
-                          Help request to {request.HelperProfile.User.firstName } {request.HelperProfile.User.lastName}
-                        </b>
-                      </div>
-                      <div className="hstack gap-2">
-                        <div>
-                          <FaUserCircle size="40" />
-                        </div>
-                        <div>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                  </div>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <div className={styles.form}>
+
+        <h3>List of Requests</h3>
+
+        {requests.map((request) => (
+          <div key={request.id} className={styles.LinkRequestsList}>
+
+            <Link href={`/user/requests/${request.HelperProfile.User.id}`} className={styles.a}>
+              <div className="shadow p-3 mb-2 bg-body rounded d-flex">
+
+                <div className="px-3">
+                  <FaUserCircle size="40" />
                 </div>
-              ))}
-            </div>
-          ))}
-        </div>
+
+                <div>
+                  <b> Help request to {request.HelperProfile.User.firstName} {request.HelperProfile.User.lastName} </b>
+                </div>
+
+              </div>
+            </Link>
+
+          </div>
+        ))}
+
       </div>
       <Navbar></Navbar>
     </>

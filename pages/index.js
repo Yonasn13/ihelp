@@ -9,7 +9,7 @@ export default function Home() {
       <div className=''>
         <div className={styles.halfPageGreen}>
           <div>
-            <Image src={'/Ihelp logo.png'} alt="/ihelp logo" width={200} height={190} />
+            <Image src={'/logo.png'} alt="/ihelp logo" width={200} height={190} />
           </div>
         </div>
         <div className={styles.halfPageWhite}>
@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-            <div className={styles.helpButtn}>
+            <div className={styles.helpButton}>
               <div className=''>
                 <Link href={'/user/helpers'}>
                   <div className='row'>
