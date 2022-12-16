@@ -14,7 +14,7 @@ export default function Aboutinfo() {
       <div className={styles.near}>
         <div className={styles.h}>
           <h2>
-            <b>The Process</b>
+            <b>How it works</b>
           </h2>
         </div>
         <div className={styles.abouts}>
@@ -51,8 +51,7 @@ export default function Aboutinfo() {
             </Link>
           </div>
         </div>
-      </div>
-      <div>
+        <div>
         <footer
           className={styles.foot}
           style={{ borderTop: "1px solid white", padding: "20px 20px" }}
@@ -61,6 +60,8 @@ export default function Aboutinfo() {
           &copy; {new Date().getFullYear()} i-help
         </footer>
       </div>
+      </div>
+      
     </>
   );
 }

@@ -93,7 +93,7 @@
 
 .container2 {
   padding: 16px;
-  margin-top: 170px;
+  margin-top: 140px;
 
 }
 
@@ -154,7 +154,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #0f0e0e;
   justify-content: center;
   align-items: center;
 }
@@ -273,7 +273,7 @@
   top: 52%;
   position: absolute;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(24, 23, 23);
 }
 
 .h {
@@ -285,8 +285,9 @@
 }
 
 .near {
-  background-color: black;
-  height: 115vh;
+  background-color: rgb(255, 255, 255);
+  color:rgb(19, 28, 28);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

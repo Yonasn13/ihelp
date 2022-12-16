@@ -40,11 +40,6 @@ export default function About() {
             everyone everywhere.
           </p>
           <div className={styles.clicks}>
-            <div>
-              <p>
-                <b>How it works?</b>
-              </p>
-            </div>
             <Link href="/abouts">
               <button type="button" className="btn btn-success">
                 <b>CONTINUE</b>

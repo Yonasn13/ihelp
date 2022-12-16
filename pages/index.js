@@ -23,6 +23,11 @@ export default function Home() {
             <p className={styles.paragp}>-Regis Murayi</p>
           </div>
           <div className={styles.container2}>
+            <div className={styles.h3HelpersList}>
+            <p>
+            <Link href={'/about'}> How it works? </Link>
+            </p>
+            </div>
             <div className={styles.helperButton}>
               <Link href={'/helper/requests'}>
                 <div className='row'>
